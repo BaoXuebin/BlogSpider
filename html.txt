@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="PJ Blog,blog,pigjian,laravel,vuejs">
+<meta name="description" content="Nothing is impossible in PJ Blog">
+<meta name="csrf-token" content="F6VGdDFsAM8YtKOhN2GXlxPRmCAeBtofoN6DayqR">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<title>PJ Blog</title>
+<link rel="stylesheet" href="/css/home.f0e4a48619682bffdc86.css">
+<script>window.Language ='zh_cn';window.Laravel ={"csrfToken":"F6VGdDFsAM8YtKOhN2GXlxPRmCAeBtofoN6DayqR"} </script>
+</head>
+<body>
+<div id="app">
+<nav class="navbar navbar-default navbar-static-top">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+<span class="sr-only">Toggle Navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="https://www.pigjian.com/article">
+<img src="/images/logo-w.png" alt="Powered By Jiajian Chan" class="logo">
+PJ Blog
+</a>
+</div>
+<div class="collapse navbar-collapse" id="app-navbar-collapse">
+<ul class="nav navbar-nav">
+<li><a href="https://www.pigjian.com/article">文章</a></li>
+<li><a href="https://www.pigjian.com/discussion">讨论</a></li>
+<li><a href="https://www.pigjian.com/share">分享</a></li>
+<li><a href="https://manual.pigjian.com" target="_blank">文档</a></li>
+<li><a href="https://www.pigjian.com/donate">打赏</a></li>
+<li><a href="http://example.pigjian.com">例子</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+<form class="navbar-form navbar-right search" role="search" method="get" action="https://www.pigjian.com/search">
+<input type="text" class="form-control" name="q" placeholder="搜索" required>
+</form>
+</li>
+<li><a href="https://www.pigjian.com/login">登录</a></li>
+<li><a href="https://www.pigjian.com/register">注册</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="main">
+<div class="container-fluid">
+<div class="jumbotron text-center">
+<div class="row">
+<div class="col-md-10 col-md-offset-1">
+<h3>Nothing is impossible.</h3>
+<h6>https://pigjian.com</h6>
+</div>
+</div>
+</div>
+</div>
+<div class="container list">
+<div class="row">
+<div class="col-md-10 col-md-offset-1">
+<div class="media">
+<a class="media-left" href="https://www.pigjian.com/article/laravel-55-release-pj-blog-update-yike-project-is-introduced">
+<img alt="laravel-55-release-pj-blog-update-yike-project-is-introduced" src="https://pig-storage.b0.upaiyun.com/cover/2017/08/30/O8jot1mYJfgY03l8M6bF6ZtSr6waPEgjtahJgT3B.jpg" data-holder-rendered="true">
+</a>
+<div class="media-body">
+<h6 class="media-heading">
+<a href="https://www.pigjian.com/article/laravel-55-release-pj-blog-update-yike-project-is-introduced">
+Laravel 5.5 发布，PJ Blog 升级 &amp; Yike 项目介绍！
+</a>
+</h6>
+<div class="meta">
+<span class="cinema">Upgrade PJ Blog and introduct the project of Yike</span>
+</div>
+<div class="description">
+</div>
+<div class="extra">
+<a href="https://www.pigjian.com/tag/%E5%85%A5%E9%97%A8">
+<div class="label"><i class="ion-pricetag"></i>入门</div>
+</a>
+<a href="https://www.pigjian.com/tag/Laravel">
+<div class="label"><i class="ion-pricetag"></i>Laravel</div>
+</a>
+<a href="https://www.pigjian.com/tag/PHP7">
+<div class="label"><i class="ion-pricetag"></i>PHP7</div>
+</a>
+<a href="https://www.pigjian.com/tag/Vuejs">
+<div class="label"><i class="ion-pricetag"></i>Vuejs</div>
+</a>
+<a href="https://www.pigjian.com/tag/overtrue">
+<div class="label"><i class="ion-pricetag"></i>overtrue</div>
+</a>
+<div class="info">
+<i class="ion-person"></i>Jiajian&nbsp;,&nbsp;
+<i class="ion-clock"></i>2个月前&nbsp;,&nbsp;
+<i class="ion-ios-eye"></i>2611
+<a href="https://www.pigjian.com/article/laravel-55-release-pj-blog-update-yike-project-is-introduced" class="pull-right">
+Read More <i class="ion-ios-arrow-forward"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="media">
+<a class="media-left" href="https://www.pigjian.com/article/composer-laravel-package-of-local-development">
+<img alt="composer-laravel-package-of-local-development" src="https://pig-storage.b0.upaiyun.com/cover/2017/08/28/erA3jCfZkCxK0Aao7pbMmQtFS34ih9K40pjIdMWc.png" data-holder-rendered="true">
+</a>
+<div class="media-body">
+<h6 class="media-heading">
+<a href="https://www.pigjian.com/article/composer-laravel-package-of-local-development">
+Composer &amp; Laravel 包本地开发
+</a>
+</h6>
+<div class="meta">
+<span class="cinema">Develop packages in local</span>
+</div>
+<div class="description">
+</div>
+<div class="extra">
+<a href="https://www.pigjian.com/tag/%E5%85%A5%E9%97%A8">
+<div class="label"><i class="ion-pricetag"></i>入门</div>
+</a>
+<a href="https://www.pigjian.com/tag/Git">
+<div class="label"><i class="ion-pricetag"></i>Git</div>
+</a>
+<a href="https://www.pigjian.com/tag/Laravel">
+<div class="label"><i class="ion-pricetag"></i>Laravel</div>
+</a>
+<a href="https://www.pigjian.com/tag/Package">
+<div class="label"><i class="ion-pricetag"></i>Package</div>
+</a>
+<a href="https://www.pigjian.com/tag/Composer">
+<div class="label"><i class="ion-pricetag"></i>Composer</div>
+</a>
+<div class="info">
+<i class="ion-person"></i>Jiajian&nbsp;,&nbsp;
+<i class="ion-clock"></i>3个月前&nbsp;,&nbsp;
+<i class="ion-ios-eye"></i>851
+<a href="https://www.pigjian.com/article/composer-laravel-package-of-local-development" class="pull-right">
+Read More <i class="ion-ios-arrow-forward"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="media">
+<a class="media-left" href="https://www.pigjian.com/article/the-a-search-algorithm-find-the-path">
+<img alt="the-a-search-algorithm-find-the-path" src="https://pig-storage.b0.upaiyun.com/cover/2017/06/20/fefDUutj9QUnoZoBm6ubMr4Xa3NldCcA0gAsmwHJ.png" data-holder-rendered="true">
+</a>
+<div class="media-body">
+<h6 class="media-heading">
+<a href="https://www.pigjian.com/article/the-a-search-algorithm-find-the-path">
+寻路之 A* 搜寻算法
+</a>
+</h6>
+<div class="meta">
+<span class="cinema">Find the best way by A* search algorithm</span>
+</div>
+<div class="description">
+寻找最短路径之 A* 搜寻算法
+</div>
+<div class="extra">
+<a href="https://www.pigjian.com/tag/Algorithm">
+<div class="label"><i class="ion-pricetag"></i>Algorithm</div>
+</a>
+<div class="info">
+<i class="ion-person"></i>Jiajian&nbsp;,&nbsp;
+<i class="ion-clock"></i>5个月前&nbsp;,&nbsp;
+<i class="ion-ios-eye"></i>1393
+<a href="https://www.pigjian.com/article/the-a-search-algorithm-find-the-path" class="pull-right">
+Read More <i class="ion-ios-arrow-forward"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="media">
+<a class="media-left" href="https://www.pigjian.com/article/based-on-the-weui-js-weui-distpicker-area-selectors">
+<img alt="based-on-the-weui-js-weui-distpicker-area-selectors" src="https://pig-storage.b0.upaiyun.com/cover/2017/06/01/0Ylt1fzjveWnKI2nmXZw3GtK1uOeQsVKZBuJgX0Y.png" data-holder-rendered="true">
+</a>
+<div class="media-body">
+<h6 class="media-heading">
+<a href="https://www.pigjian.com/article/based-on-the-weui-js-weui-distpicker-area-selectors">
+基于 Weui.js 的地区选择器 weui-distpicker
+</a>
+</h6>
+<div class="meta">
+<span class="cinema">A easy-to-use district selector component base on weui.js.</span>
+</div>
+<div class="description">
+</div>
+<div class="extra">
+<a href="https://www.pigjian.com/tag/%E5%85%A5%E9%97%A8">
+<div class="label"><i class="ion-pricetag"></i>入门</div>
+</a>
+<a href="https://www.pigjian.com/tag/components">
+<div class="label"><i class="ion-pricetag"></i>components</div>
+</a>
+<a href="https://www.pigjian.com/tag/Vuejs">
+<div class="label"><i class="ion-pricetag"></i>Vuejs</div>
+</a>
+<div class="info">
+<i class="ion-person"></i>Jiajian&nbsp;,&nbsp;
+<i class="ion-clock"></i>5个月前&nbsp;,&nbsp;
+<i class="ion-ios-eye"></i>11561
+<a href="https://www.pigjian.com/article/based-on-the-weui-js-weui-distpicker-area-selectors" class="pull-right">
+Read More <i class="ion-ios-arrow-forward"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="media">
+<a class="media-left" href="https://www.pigjian.com/article/v-textcomplete-vue-component">
+<img alt="v-textcomplete-vue-component" src="https://pigjian.com/images/v-textcomplete.png" data-holder-rendered="true">
+</a>
+<div class="media-body">
+<h6 class="media-heading">
+<a href="https://www.pigjian.com/article/v-textcomplete-vue-component">
+Vue 组件 — V - Textcomplete
+</a>
+</h6>
+<div class="meta">
+<span class="cinema">A easy-to-use text complete component made with Vue.js.</span>
+</div>
+<div class="description">
+</div>
+<div class="extra">
+<a href="https://www.pigjian.com/tag/components">
+<div class="label"><i class="ion-pricetag"></i>components</div>
+</a>
+<a href="https://www.pigjian.com/tag/Vuejs">
+<div class="label"><i class="ion-pricetag"></i>Vuejs</div>
+</a>
+<a href="https://www.pigjian.com/tag/Package">
+<div class="label"><i class="ion-pricetag"></i>Package</div>
+</a>
+<div class="info">
+<i class="ion-person"></i>Jiajian&nbsp;,&nbsp;
+<i class="ion-clock"></i>6个月前&nbsp;,&nbsp;
+<i class="ion-ios-eye"></i>1900
+<a href="https://www.pigjian.com/article/v-textcomplete-vue-component" class="pull-right">
+Read More <i class="ion-ios-arrow-forward"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="media">
+<a class="media-left" href="https://www.pigjian.com/article/simplify-your-attention-with-thumb-up-laravel-follow">
+<img alt="simplify-your-attention-with-thumb-up-laravel-follow" src="https://pigjian.com/storage/post_img/2017-04-12/follow-vote.png" data-holder-rendered="true">
+</a>
+<div class="media-body">
+<h6 class="media-heading">
+<a href="https://www.pigjian.com/article/simplify-your-attention-with-thumb-up-laravel-follow">
+简化你的关注与点赞 - Laravel Follow &amp; Vote
+</a>
+</h6>
+<div class="meta">
+<span class="cinema">Simplify your follow and vote feature</span>
+</div>
+<div class="description">
+</div>
+<div class="extra">
+<a href="https://www.pigjian.com/tag/Laravel">
+<div class="label"><i class="ion-pricetag"></i>Laravel</div>
+</a>
+<a href="https://www.pigjian.com/tag/Package">
+<div class="label"><i class="ion-pricetag"></i>Package</div>
+</a>
+<div class="info">
+<i class="ion-person"></i>Jiajian&nbsp;,&nbsp;
+<i class="ion-clock"></i>7个月前&nbsp;,&nbsp;
+<i class="ion-ios-eye"></i>1738
+<a href="https://www.pigjian.com/article/simplify-your-attention-with-thumb-up-laravel-follow" class="pull-right">
+Read More <i class="ion-ios-arrow-forward"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="media">
+<a class="media-left" href="https://www.pigjian.com/article/simple-and-easy-deployment-of-your-project-deployer">
+<img alt="simple-and-easy-deployment-of-your-project-deployer" src="https://pigjian.com/storage/post_img/2017-04-09/deployer.jpg" data-holder-rendered="true">
+</a>
+<div class="media-body">
+<h6 class="media-heading">
+<a href="https://www.pigjian.com/article/simple-and-easy-deployment-of-your-project-deployer">
+简单轻松部署你的项目 - Deployer
+</a>
+</h6>
+<div class="meta">
+<span class="cinema">Deploy your project simply.</span>
+</div>
+<div class="description">
+简单轻松部署你的项目 - Deployer
+</div>
+<div class="extra">
+<a href="https://www.pigjian.com/tag/Laravel">
+<div class="label"><i class="ion-pricetag"></i>Laravel</div>
+</a>
+<a href="https://www.pigjian.com/tag/%E5%85%A5%E9%97%A8">
+<div class="label"><i class="ion-pricetag"></i>入门</div>
+</a>
+<a href="https://www.pigjian.com/tag/Deployer">
+<div class="label"><i class="ion-pricetag"></i>Deployer</div>
+</a>
+<div class="info">
+<i class="ion-person"></i>Jiajian&nbsp;,&nbsp;
+<i class="ion-clock"></i>7个月前&nbsp;,&nbsp;
+<i class="ion-ios-eye"></i>3364
+<a href="https://www.pigjian.com/article/simple-and-easy-deployment-of-your-project-deployer" class="pull-right">
+Read More <i class="ion-ios-arrow-forward"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="media">
+<a class="media-left" href="https://www.pigjian.com/article/a-simple-and-easy-to-use-vue-v-distpicker-components">
+<img alt="a-simple-and-easy-to-use-vue-v-distpicker-components" src="https://pigjian.com/images/v-distpicker.png" data-holder-rendered="true">
+</a>
+<div class="media-body">
+<h6 class="media-heading">
+<a href="https://www.pigjian.com/article/a-simple-and-easy-to-use-vue-v-distpicker-components">
+一个简单易用的 Vue 组件 V - Distpicker
+</a>
+</h6>
+<div class="meta">
+<span class="cinema">A easy-to-use district selector component.</span>
+</div>
+<div class="description">
+V - Distpicker 是一个简单、易用、灵活的 Vue 组件，且兼容 PC端、移动端。
+</div>
+<div class="extra">
+<a href="https://www.pigjian.com/tag/Vuejs">
+<div class="label"><i class="ion-pricetag"></i>Vuejs</div>
+</a>
+<div class="info">
+<i class="ion-person"></i>Jiajian&nbsp;,&nbsp;
+<i class="ion-clock"></i>8个月前&nbsp;,&nbsp;
+<i class="ion-ios-eye"></i>2700
+<a href="https://www.pigjian.com/article/a-simple-and-easy-to-use-vue-v-distpicker-components" class="pull-right">
+Read More <i class="ion-ios-arrow-forward"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="media">
+<a class="media-left" href="https://www.pigjian.com/article/laravel-tap-the-usage">
+<img alt="laravel-tap-the-usage" src="https://pigjian.com/uploads/post_img/2017-02-21/larval-tap.png" data-holder-rendered="true">
+</a>
+<div class="media-body">
+<h6 class="media-heading">
+<a href="https://www.pigjian.com/article/laravel-tap-the-usage">
+Laravel tap 用法
+</a>
+</h6>
+<div class="meta">
+<span class="cinema">The global helper function of tap()</span>
+</div>
+<div class="description">
+Laravel 全局帮助函数 tap()
+</div>
+<div class="extra">
+<a href="https://www.pigjian.com/tag/Laravel">
+<div class="label"><i class="ion-pricetag"></i>Laravel</div>
+</a>
+<div class="info">
+<i class="ion-person"></i>Jiajian&nbsp;,&nbsp;
+<i class="ion-clock"></i>9个月前&nbsp;,&nbsp;
+<i class="ion-ios-eye"></i>2368
+<a href="https://www.pigjian.com/article/laravel-tap-the-usage" class="pull-right">
+Read More <i class="ion-ios-arrow-forward"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="media">
+<a class="media-left" href="https://www.pigjian.com/article/pj-blog-upgrade-to-laravel-54">
+<img alt="pj-blog-upgrade-to-laravel-54" src="https://pigjian.com/uploads/post_img/2017-01-25/upgrade.jpg" data-holder-rendered="true">
+</a>
+<div class="media-body">
+<h6 class="media-heading">
+<a href="https://www.pigjian.com/article/pj-blog-upgrade-to-laravel-54">
+PJ Blog 升级到 Laravel 5.4
+</a>
+</h6>
+<div class="meta">
+<span class="cinema">Upgrade the Laravel 5.3 to Laravel 5.4</span>
+</div>
+<div class="description">
+Laravel 5.3 升级到 Laravel 5.4，使用 Laravel Mix 替代 Laravel Elixir
+</div>
+<div class="extra">
+<a href="https://www.pigjian.com/tag/%E5%85%A5%E9%97%A8">
+<div class="label"><i class="ion-pricetag"></i>入门</div>
+</a>
+<a href="https://www.pigjian.com/tag/Laravel">
+<div class="label"><i class="ion-pricetag"></i>Laravel</div>
+</a>
+<a href="https://www.pigjian.com/tag/Vuejs">
+<div class="label"><i class="ion-pricetag"></i>Vuejs</div>
+</a>
+<div class="info">
+<i class="ion-person"></i>Jiajian&nbsp;,&nbsp;
+<i class="ion-clock"></i>10个月前&nbsp;,&nbsp;
+<i class="ion-ios-eye"></i>3750
+<a href="https://www.pigjian.com/article/pj-blog-upgrade-to-laravel-54" class="pull-right">
+Read More <i class="ion-ios-arrow-forward"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="media">
+<a class="media-left" href="https://www.pigjian.com/article/blog-deployment-installation-problems">
+<img alt="blog-deployment-installation-problems" src="https://pigjian.com/uploads/post_img/2016-12-31/problem-for-blog.png" data-holder-rendered="true">
+</a>
+<div class="media-body">
+<h6 class="media-heading">
+<a href="https://www.pigjian.com/article/blog-deployment-installation-problems">
+Blog 部署安装的一些问题
+</a>
+</h6>
+<div class="meta">
+<span class="cinema">Solve the problems for deploying</span>
+</div>
+<div class="description">
+关于 PJ Blog 部署的一些小问题
+</div>
+<div class="extra">
+<a href="https://www.pigjian.com/tag/Others">
+<div class="label"><i class="ion-pricetag"></i>Others</div>
+</a>
+<a href="https://www.pigjian.com/tag/Blog">
+<div class="label"><i class="ion-pricetag"></i>Blog</div>
+</a>
+<div class="info">
+<i class="ion-person"></i>Jiajian&nbsp;,&nbsp;
+<i class="ion-clock"></i>10个月前&nbsp;,&nbsp;
+<i class="ion-ios-eye"></i>2934
+<a href="https://www.pigjian.com/article/blog-deployment-installation-problems" class="pull-right">
+Read More <i class="ion-ios-arrow-forward"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="media">
+<a class="media-left" href="https://www.pigjian.com/article/finally-combined-with-laravel-vue-53-21-modular-development-blog-system">
+<img alt="finally-combined-with-laravel-vue-53-21-modular-development-blog-system" src="https://pigjian.com/uploads/post_img/2016-12-31/logo2.png" data-holder-rendered="true">
+</a>
+<div class="media-body">
+<h6 class="media-heading">
+<a href="https://www.pigjian.com/article/finally-combined-with-laravel-vue-53-21-modular-development-blog-system">
+终于来了！结合 Laravel 5.3 + vue 2.1 组件化开发的博客系统
+</a>
+</h6>
+<div class="meta">
+<span class="cinema">Laravel 5.3 + vue 2.1 components</span>
+</div>
+<div class="description">
+PJ Blog 是一个开源的博客系统，结合了 `Laravel 5.3` 和 `vue 2.1` 组件化开发。后台 `SPA` 带来更好的操作体验。
+</div>
+<div class="extra">
+<a href="https://www.pigjian.com/tag/components">
+<div class="label"><i class="ion-pricetag"></i>components</div>
+</a>
+<a href="https://www.pigjian.com/tag/Laravel">
+<div class="label"><i class="ion-pricetag"></i>Laravel</div>
+</a>
+<a href="https://www.pigjian.com/tag/Vuejs">
+<div class="label"><i class="ion-pricetag"></i>Vuejs</div>
+</a>
+<div class="info">
+<i class="ion-person"></i>Jiajian&nbsp;,&nbsp;
+<i class="ion-clock"></i>11个月前&nbsp;,&nbsp;
+<i class="ion-ios-eye"></i>5667
+<a href="https://www.pigjian.com/article/finally-combined-with-laravel-vue-53-21-modular-development-blog-system" class="pull-right">
+Read More <i class="ion-ios-arrow-forward"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="media">
+<a class="media-left" href="https://www.pigjian.com/article/iterm-2-fish">
+<img alt="iterm-2-fish" src="https://pigjian.com/uploads/post_img/2016-10-13/iterm2.png" data-holder-rendered="true">
+</a>
+<div class="media-body">
+<h6 class="media-heading">
+<a href="https://www.pigjian.com/article/iterm-2-fish">
+Iterm 2 上简单安装 Fish 并配置主题
+</a>
+</h6>
+<div class="meta">
+<span class="cinema">Iterm 2 + Fish + Fisherman</span>
+</div>
+<div class="description">
+Iterm 2 上简单安装 Fish 并配置主题
+</div>
+<div class="extra">
+<a href="https://www.pigjian.com/tag/Iterm2">
+<div class="label"><i class="ion-pricetag"></i>Iterm2</div>
+</a>
+<a href="https://www.pigjian.com/tag/fish">
+<div class="label"><i class="ion-pricetag"></i>fish</div>
+</a>
+<div class="info">
+<i class="ion-person"></i>Jiajian&nbsp;,&nbsp;
+<i class="ion-clock"></i>1年前&nbsp;,&nbsp;
+<i class="ion-ios-eye"></i>2592
+<a href="https://www.pigjian.com/article/iterm-2-fish" class="pull-right">
+Read More <i class="ion-ios-arrow-forward"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="media">
+<a class="media-left" href="https://www.pigjian.com/article/laravel-vue">
+<img alt="laravel-vue" src="https://pigjian.com/uploads/post_img/2016-08-18/vue-laravel-example.png" data-holder-rendered="true">
+</a>
+<div class="media-body">
+<h6 class="media-heading">
+<a href="https://www.pigjian.com/article/laravel-vue">
+Laravel 中使用 Vue 组件化开发（配置）
+</a>
+</h6>
+<div class="meta">
+<span class="cinema">Laravel + Vue 配置</span>
+</div>
+<div class="description">
+Laravel 中使用 Vue 组件化开发
+</div>
+<div class="extra">
+<a href="https://www.pigjian.com/tag/Laravel">
+<div class="label"><i class="ion-pricetag"></i>Laravel</div>
+</a>
+<a href="https://www.pigjian.com/tag/Vuejs">
+<div class="label"><i class="ion-pricetag"></i>Vuejs</div>
+</a>
+<div class="info">
+<i class="ion-person"></i>Jiajian&nbsp;,&nbsp;
+<i class="ion-clock"></i>1年前&nbsp;,&nbsp;
+<i class="ion-ios-eye"></i>10559
+<a href="https://www.pigjian.com/article/laravel-vue" class="pull-right">
+Read More <i class="ion-ios-arrow-forward"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="media">
+<a class="media-left" href="https://www.pigjian.com/article/api-token-authentication">
+<img alt="api-token-authentication" src="https://pigjian.com/uploads/post_img/2016-08-04/api-token.png" data-holder-rendered="true">
+</a>
+<div class="media-body">
+<h6 class="media-heading">
+<a href="https://www.pigjian.com/article/api-token-authentication">
+API Token Authentication
+</a>
+</h6>
+<div class="meta">
+<span class="cinema">Laravel 5.2 &amp; Laravel 5.3</span>
+</div>
+<div class="description">
+API Token Authentication in Laravel 5.2 &amp; Laravel 5.3
+</div>
+<div class="extra">
+<a href="https://www.pigjian.com/tag/API">
+<div class="label"><i class="ion-pricetag"></i>API</div>
+</a>
+<a href="https://www.pigjian.com/tag/Token">
+<div class="label"><i class="ion-pricetag"></i>Token</div>
+</a>
+<a href="https://www.pigjian.com/tag/Authentication">
+<div class="label"><i class="ion-pricetag"></i>Authentication</div>
+</a>
+<div class="info">
+<i class="ion-person"></i>Jiajian&nbsp;,&nbsp;
+<i class="ion-clock"></i>1年前&nbsp;,&nbsp;
+<i class="ion-ios-eye"></i>2615
+<a href="https://www.pigjian.com/article/api-token-authentication" class="pull-right">
+Read More <i class="ion-ios-arrow-forward"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center">
+<div class="pagination pagination-minimal">
+<ul>
+<li class="previous disabled"><span><i class="ion-chevron-left"></i></span></li>
+<li class="active"><span>1</span></li>
+<li><a href="https://www.pigjian.com/article?page=2">2</a></li>
+<li><a href="https://www.pigjian.com/article?page=3">3</a></li>
+<li class="next"><a href="https://www.pigjian.com/article?page=2" rel="next"><i class="ion-chevron-right"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+<footer id="footer" class="footer">
+<div class="container text-center">
+<div class="row content">
+<div class="col-md-4 col-md-offset-4">
+<ul class="connect">
+<li>
+<a href="https://www.pigjian.com">
+<i class="large ion-ios-home"></i>
+</a>
+</li>
+<li>
+<a href="https://github.com/jcc" target="_blank">
+<i class="large ion-social-github icon"></i>
+</a>
+</li>
+<li>
+<a href="https://twitter.com/pigjian" target="_blank">
+<i class="large ion-social-twitter"></i>
+</a>
+</li>
+</ul>
+<div class="links">
+<a href="https://www.pigjian.com/link">友情链接</a>
+<a href="https://www.pigjian.com/about">关于我</a>
+</div>
+<div class="sponsors">
+<div class="title">CDN 支持</div>
+<a href="https://www.upyun.com/"><img width="150" src="https://pigjian.com/storage/logo/upyun-white.png"/></a>
+</div>
+</div>
+</div>
+</div>
+<div class="copy-right text-center">
+<span>© Pig Jian 2016. All rights reserved. </span><a class="item" target="_blank" href="http://www.miitbeian.gov.cn/">粤ICP备16020344号-1</a>
+</div>
+</footer> </div>
+<script src="/js/home.7bc569eaa262b6a3caa5.js"></script>
+<script>$(function () {$("[data-toggle='tooltip']").tooltip();});</script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-81634754-1','auto');ga('send','pageview');</script>
+</body>
+</html>
