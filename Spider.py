@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 from NetUtils import NetUtils
 from parse.PJBlog import parsePJBlog
 from parse.ZiWenXie import parseZiWenXie
@@ -17,12 +18,10 @@ if __name__ == '__main__':
         { 'url': 'https://www.byvoid.com/blog/list', 'handler': parseBYVoid }
     ]
     for blogAction in blogActions:
-        content = NetUtils.request(blogAction.get('url')).get('content')
         print('+' + '--' * 20 + '+')
-        parse(content, blogAction.get('handler'))
+        try:
+            content = NetUtils.request(blogAction.get('url')).get('content')
+            parse(content, blogAction.get('handler'))
+        except:
+            print(blogAction.get('url') + '访问超时')
     print('+' + '--' * 20 + '+')
-
-    # 写入文件
-    # file_object = open('html.txt', 'wb')
-    # file_object.write(NetUtils.request('https://www.byvoid.com/blog/list').get('content'))
-    # file_object.close()

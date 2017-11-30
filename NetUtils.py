@@ -1,3 +1,5 @@
+# -*- coding:utf-8 -*-
+import ssl
 from urllib import request
 
 class NetUtils(object):
@@ -10,7 +12,8 @@ class NetUtils(object):
         # 请求 url
         error = None
         result = None
-        with request.urlopen(req) as f:
+        context = ssl._create_unverified_context()
+        with request.urlopen(req, timeout=10, context=context) as f:
             if f.status == 200:
                 try:
                     result = f.read()
