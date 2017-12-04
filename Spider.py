@@ -16,15 +16,15 @@ from Parse import parse
 
 if __name__ == '__main__':
     blogActions = [
-        # { 'url': 'https://www.pigjian.com/article', 'handler': parsePJBlog },
+        { 'url': 'https://www.pigjian.com/article', 'handler': parsePJBlog },
         # { 'url': 'https://www.ziwenxie.site/', 'handler': parseZiWenXie },
-        # { 'url': 'http://www.jackpu.com/', 'handler': parseJackPuBlog },
-        # { 'url': 'http://posts.enumsblog.com/list', 'handler': parseEnumsBlog },
-        # { 'url': 'http://makaiqian.com/', 'handler': parseMaKaiQian },
-        # { 'url': 'https://www.byvoid.com/blog/list', 'handler': parseBYVoid },
-        # { 'url': 'http://www.chole.io/blog/archive.html', 'handler': parseChole },
-        # { 'url': 'http://yuanhehe.cn/archives/', 'handler': parseYuanHeHe },
-        # { 'url': 'https://blog.thankbabe.com/archive/', 'handler': parseThankbabe },
+        { 'url': 'http://www.jackpu.com/', 'handler': parseJackPuBlog },
+        { 'url': 'http://posts.enumsblog.com/list', 'handler': parseEnumsBlog },
+        { 'url': 'http://makaiqian.com/', 'handler': parseMaKaiQian },
+        { 'url': 'https://www.byvoid.com/blog/list', 'handler': parseBYVoid },
+        { 'url': 'http://www.chole.io/blog/archive.html', 'handler': parseChole },
+        { 'url': 'http://yuanhehe.cn/archives/', 'handler': parseYuanHeHe },
+        { 'url': 'https://blog.thankbabe.com/archive/', 'handler': parseThankbabe },
         { 'url': 'https://littlewin.wang/', 'handler': parseLittleWin }
     ]
     for blogAction in blogActions:
