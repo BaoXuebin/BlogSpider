@@ -31,7 +31,14 @@ def log(title, diff):
     if length > 0:
         print('访问', title, ', ^-^ 博主又发布了', length, '篇博客:')
         for blog, i in zip(diff, range(length)):
-            print(i+1, blog.get('title'), '[' + blog.get('publishTime') + ']')
+            line = blog.get('title')
+            if blog.get('publishTime'):
+                line += ' [' + blog.get('publishTime') + ']'
+            if blog.get('count'):
+                line += ' [' + blog.get('count') + '次浏览]'
+            if blog.get('comment'):
+                line += ' [' + blog.get('comment') + '条评论]'
+            print(i + 1, line)
     else:
         print('访问', title, ', 博主很懒，没有任何更新 :(')
 

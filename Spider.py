@@ -12,12 +12,14 @@ from parse.Chole import parseChole
 from parse.YuanHeHe import parseYuanHeHe
 from parse.Thankbabe import parseThankbabe
 from parse.LittleWin import parseLittleWin
+from parse.Marco import parseMarco
+from parse.CoolShell import parseCoolShell
 from Parse import parse
 
 if __name__ == '__main__':
     blogActions = [
         { 'url': 'https://www.pigjian.com/article', 'handler': parsePJBlog },
-        # { 'url': 'https://www.ziwenxie.site/', 'handler': parseZiWenXie },
+        { 'url': 'https://www.ziwenxie.site/', 'handler': parseZiWenXie },
         { 'url': 'http://www.jackpu.com/', 'handler': parseJackPuBlog },
         { 'url': 'http://posts.enumsblog.com/list', 'handler': parseEnumsBlog },
         { 'url': 'http://makaiqian.com/', 'handler': parseMaKaiQian },
@@ -25,18 +27,20 @@ if __name__ == '__main__':
         { 'url': 'http://www.chole.io/blog/archive.html', 'handler': parseChole },
         { 'url': 'http://yuanhehe.cn/archives/', 'handler': parseYuanHeHe },
         { 'url': 'https://blog.thankbabe.com/archive/', 'handler': parseThankbabe },
-        { 'url': 'https://littlewin.wang/', 'handler': parseLittleWin }
+        { 'url': 'https://littlewin.wang/', 'handler': parseLittleWin },
+        { 'url': 'http://www.hanyuehui.site/get-articles?count=15&type=1', 'handler': parseMarco },
+        { 'url': 'https://coolshell.cn/', 'handler': parseCoolShell }
     ]
     for blogAction in blogActions:
         print('+' + '--' * 20 + '+')
         try:
-            response = NetUtils.get(blogAction.get('url'))
-            parse(response.text, blogAction.get('handler'))
+            content = NetUtils.get(blogAction.get('url'))
+            parse(content, blogAction.get('handler'))
         except Exception as e:
             print(e)
             print(blogAction.get('url') + '访问失败')
     print('+' + '--' * 20 + '+')
 
-    # response = NetUtils.get('https://littlewin.wang/')
-    # with open('html.txt', 'w', encoding=response.encoding) as f:
-    #     f.write(response.text)
+    # response = NetUtils.get('https://coolshell.cn/')
+    # with open('html.txt', 'w', encoding='utf-8') as f:
+    #     f.write(response)
