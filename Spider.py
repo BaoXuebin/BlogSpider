@@ -14,6 +14,7 @@ from parse.Thankbabe import parseThankbabe
 from parse.LittleWin import parseLittleWin
 from parse.Marco import parseMarco
 from parse.CoolShell import parseCoolShell
+from parse.Tuobaye import parseTuobaye
 from Parse import parse
 
 if __name__ == '__main__':
@@ -29,7 +30,8 @@ if __name__ == '__main__':
         { 'url': 'https://blog.thankbabe.com/archive/', 'handler': parseThankbabe },
         { 'url': 'https://littlewin.wang/', 'handler': parseLittleWin },
         { 'url': 'http://www.hanyuehui.site/get-articles?count=15&type=1', 'handler': parseMarco },
-        { 'url': 'https://coolshell.cn/', 'handler': parseCoolShell }
+        { 'url': 'https://coolshell.cn/', 'handler': parseCoolShell },
+        { 'url': 'http://tuobaye.com/#blog', 'handler': parseTuobaye },
     ]
     for blogAction in blogActions:
         print('+' + '--' * 20 + '+')
@@ -41,6 +43,6 @@ if __name__ == '__main__':
             print(blogAction.get('url') + '访问失败')
     print('+' + '--' * 20 + '+')
 
-    # response = NetUtils.get('https://coolshell.cn/')
+    # response = NetUtils.get('http://tuobaye.com/#blog')
     # with open('html.txt', 'w', encoding='utf-8') as f:
     #     f.write(response)
