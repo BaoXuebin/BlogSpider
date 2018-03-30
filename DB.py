@@ -32,9 +32,8 @@ def insertByBatch(netBlogs, title):
         author = netBlog.get("author") if netBlog.get("author") else ''
         date = str2Datetime(netBlog.get("publishTime"))
         # 构建 sql
-        sql = "INSERT INTO NET_BLOG(id, title, href, author, publishTime, origin) VALUES ('%s', '%s', '%s', '%s', '%s', \"%s\")" % \
+        sql = "INSERT INTO net_blog(id, title, href, author, publishTime, origin) VALUES ('%s', '%s', '%s', '%s', '%s', \"%s\")" % \
                 (uuid.uuid1(), netBlog.get("title"), netBlog.get("href"), author, date.strftime('%Y-%m-%d'), title)
-        print(sql)
         try:
             cursor.execute(sql)
             db.commit()
