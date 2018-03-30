@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 import io
 import sys
+import time
 from NetUtils import NetUtils
 from parse.PJBlog import parsePJBlog
 from parse.ZiWenXie import parseZiWenXie
@@ -19,7 +20,7 @@ from Parse import parse
 
 if __name__ == '__main__':
     blogActions = [
-        { 'url': 'https://www.pigjian.com/article', 'handler': parsePJBlog },
+        # { 'url': 'https://www.pigjian.com/article', 'handler': parsePJBlog },
         { 'url': 'https://www.ziwenxie.site/', 'handler': parseZiWenXie },
         { 'url': 'http://www.jackpu.com/', 'handler': parseJackPuBlog },
         { 'url': 'http://posts.enumsblog.com/list', 'handler': parseEnumsBlog },
@@ -33,15 +34,15 @@ if __name__ == '__main__':
         { 'url': 'https://coolshell.cn/', 'handler': parseCoolShell },
         { 'url': 'http://tuobaye.com/#blog', 'handler': parseTuobaye },
     ]
+    date = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
+    print('+' + '--' * 6 + date + '--' * 6 + '+')
     for blogAction in blogActions:
-        print('+' + '--' * 20 + '+')
         try:
             content = NetUtils.get(blogAction.get('url'))
             parse(content, blogAction.get('handler'))
         except Exception as e:
             print(e)
             print(blogAction.get('url') + '访问失败')
-    print('+' + '--' * 20 + '+')
 
     # response = NetUtils.get('http://tuobaye.com/#blog')
     # with open('html.txt', 'w', encoding='utf-8') as f:

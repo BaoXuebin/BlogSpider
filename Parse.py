@@ -2,6 +2,8 @@ import io
 import sys
 import json
 
+from DB import insertByBatch
+
 # 修改 windows 输出乱码，改变标准输出的默认编码
 # sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='gb18030')
 #
@@ -49,6 +51,8 @@ def parse(content, handler):
     title = page.get('title')
     # 页面数据比对，获取更新博客列表
     diff = diffJson(page)
+    # 持久化
+    insertByBatch(diff, title)
     # 输出数据内容
     log(title, diff)
     # 缓存页面数据
