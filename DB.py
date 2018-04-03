@@ -4,9 +4,11 @@ import pymysql
 import uuid
 import datetime
 import json
+import os
 
 params = {}
 try:
+    print(os.getcwd())
     with open('DB.json', 'r') as ff:
         params = json.load(ff)
 except:

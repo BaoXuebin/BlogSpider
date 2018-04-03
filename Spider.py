@@ -2,20 +2,22 @@
 import io
 import sys
 import time
+sys.path.append('parse')
 from NetUtils import NetUtils
-from parse.PJBlog import parsePJBlog
-from parse.ZiWenXie import parseZiWenXie
-from parse.JackPuBlog import parseJackPuBlog
-from parse.EnumsBlog import parseEnumsBlog
-from parse.MaKaiQian import parseMaKaiQian
-from parse.BYVoid import parseBYVoid
-from parse.Chole import parseChole
-from parse.YuanHeHe import parseYuanHeHe
-from parse.Thankbabe import parseThankbabe
-from parse.LittleWin import parseLittleWin
-from parse.Marco import parseMarco
-from parse.CoolShell import parseCoolShell
-from parse.Tuobaye import parseTuobaye
+from PJBlog import parsePJBlog
+from ZiWenXie import parseZiWenXie
+from JackPuBlog import parseJackPuBlog
+from EnumsBlog import parseEnumsBlog
+from MaKaiQian import parseMaKaiQian
+from BYVoid import parseBYVoid
+from Chole import parseChole
+from YuanHeHe import parseYuanHeHe
+from Thankbabe import parseThankbabe
+from LittleWin import parseLittleWin
+from Marco import parseMarco
+from CoolShell import parseCoolShell
+from Tuobaye import parseTuobaye
+from Jilinwula import exports as Jilinwula
 from Parse import parse
 
 if __name__ == '__main__':
@@ -33,6 +35,7 @@ if __name__ == '__main__':
         { 'url': 'http://www.hanyuehui.site/get-articles?count=15&type=1', 'handler': parseMarco },
         { 'url': 'https://coolshell.cn/', 'handler': parseCoolShell },
         { 'url': 'http://tuobaye.com/#blog', 'handler': parseTuobaye },
+        { 'url': Jilinwula.get('url'), 'handler': Jilinwula.get('parser') },
     ]
     date = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
     print('+' + '--' * 6 + date + '--' * 6 + '+')

@@ -18,7 +18,13 @@ def diffJson(page):
             oldPage = json.load(f)
             oldBlogIds = [ blog.get('id') for blog in oldPage.get('blogs') ]
             newBlogIds = [ blog.get('id') for blog in page.get('blogs') ]
-            diffIds = [ id for id in newBlogIds if id not in oldBlogIds ]
+            diffIds = []
+            for id in newBlogIds:
+                if id not in oldBlogIds:
+                    diffIds.append(id)
+                else:
+                    break;
+            # diffIds = [ id for id in newBlogIds if id not in oldBlogIds ]
             return [ blog for blog in page.get('blogs') if blog.get('id') in diffIds ]
     except:
         return page.get('blogs')
