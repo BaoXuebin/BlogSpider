@@ -54,11 +54,13 @@ def log(title, diff):
 # 输出包含该页面信息的字典对象
 def parse(content, handler):
     page = handler(content)
+    print(page)
     title = page.get('title')
+    origin = page.get('origin')
     # 页面数据比对，获取更新博客列表
     diff = diffJson(page)
     # 持久化
-    insertByBatch(diff, title)
+    insertByBatch(diff, title, origin)
     # 输出数据内容
     log(title, diff)
     # 缓存页面数据

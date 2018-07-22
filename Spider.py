@@ -5,7 +5,6 @@ import time
 sys.path.append('parse')
 from NetUtils import NetUtils
 from PJBlog import parsePJBlog
-from ZiWenXie import parseZiWenXie
 from JackPuBlog import parseJackPuBlog
 from EnumsBlog import parseEnumsBlog
 from MaKaiQian import parseMaKaiQian
@@ -22,8 +21,7 @@ from Parse import parse
 
 if __name__ == '__main__':
     blogActions = [
-        # { 'url': 'https://www.pigjian.com/article', 'handler': parsePJBlog },
-        { 'url': 'https://www.ziwenxie.site/', 'handler': parseZiWenXie },
+        { 'url': 'https://www.pigjian.com/article', 'handler': parsePJBlog },
         { 'url': 'http://www.jackpu.com/', 'handler': parseJackPuBlog },
         { 'url': 'http://posts.enumsblog.com/list', 'handler': parseEnumsBlog },
         { 'url': 'http://makaiqian.com/', 'handler': parseMaKaiQian },

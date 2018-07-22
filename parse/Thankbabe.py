@@ -4,6 +4,7 @@
 from bs4 import BeautifulSoup
 
 base = 'https://blog.thankbabe.com/'
+origin = 'https://blog.thankbabe.com/'
 
 def parseThankbabe(content=""):
     page = dict()
@@ -29,4 +30,5 @@ def parseThankbabe(content=""):
     # 所有博客列表
     page['blogs'] = blogs
     page['blogCount'] = len(blogs)
+    page['origin'] = origin
     return page

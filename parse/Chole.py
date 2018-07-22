@@ -3,10 +3,13 @@
 # 解析 猫叔の杂记 · 手帐 的脚本
 from bs4 import BeautifulSoup
 
+origin = 'http://www.chole.io/blog/'
+
 def parseChole(content=""):
     page = dict()
     if not content:
         return page
+    page['origin'] = origin
     # 获取 soup 对象
     soup = BeautifulSoup(content, 'html.parser')
     # 页面标题

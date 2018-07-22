@@ -1,8 +1,13 @@
 # 解析 PJBlog 的脚本
 from bs4 import BeautifulSoup
 
+origin = 'https://www.pigjian.com/'
+url = 'https://www.pigjian.com/article'
+
 def parsePJBlog(content=""):
     page = dict()
+    # 网站主页
+    page['origin'] = origin
     if not content:
         return page
     # 获取 soup 对象

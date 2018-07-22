@@ -2,6 +2,7 @@
 from Base import getSoup
 
 title = "吉林乌拉"
+origin = "http://jilinwula.com/"
 url = "http://jilinwula.com/archives"
 
 # 解析 ZiWenXie 的脚本
@@ -9,6 +10,7 @@ def parseJilinwula(content=""):
     page = dict()
     soup = getSoup(content)
     if soup:
+        page['origin'] = origin
         # 页面标题
         page['title'] = title
         # 初始化博客列表集合

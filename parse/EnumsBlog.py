@@ -3,11 +3,13 @@
 from bs4 import BeautifulSoup
 
 base = 'http://posts.enumsblog.com/list'
+origin = 'http://posts.enumsblog.com/'
 
 def parseEnumsBlog(content=""):
     page = dict()
     if not content:
         return page
+    page['origin'] = origin
     # 获取 soup 对象
     soup = BeautifulSoup(content, 'html.parser')
     # 页面标题

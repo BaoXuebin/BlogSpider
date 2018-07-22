@@ -2,9 +2,11 @@
 from bs4 import BeautifulSoup
 
 base = 'https://www.byvoid.com'
+origin = 'https://www.byvoid.com/'
 
 def parseBYVoid(content=""):
     page = dict()
+    page['origin'] = origin
     if not content:
         return page
     # 获取 soup 对象

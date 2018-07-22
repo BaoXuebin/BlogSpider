@@ -4,10 +4,12 @@
 from bs4 import BeautifulSoup
 import re
 
+origin = 'https://coolshell.cn/'
 p = re.compile(r'\d+')
 
 def parseCoolShell(content=""):
     page = dict()
+    page['origin'] = origin
     if not content:
         return page
     # 获取 soup 对象

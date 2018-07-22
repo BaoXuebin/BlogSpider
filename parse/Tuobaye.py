@@ -3,6 +3,8 @@
 # 解析 拓跋的前端客栈 的脚本
 from bs4 import BeautifulSoup
 
+origin = 'http://tuobaye.com/'
+
 def parseTuobaye(content=""):
     page = dict()
     if not content:
@@ -28,4 +30,5 @@ def parseTuobaye(content=""):
     # 所有博客列表
     page['blogs'] = blogs
     page['blogCount'] = len(blogs)
+    page['origin'] = origin
     return page

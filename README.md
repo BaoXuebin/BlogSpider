@@ -8,7 +8,6 @@
 - [BYVoid](https://www.byvoid.com/)
 - [Enum的技术博客 | 保持专注](http://posts.enumsblog.com/)
 - [SFLYQ](https://blog.thankbabe.com/)
-- [ZiWenXie](https://www.ziwenxie.site/)
 - [小麻雀](http://makaiqian.com/)
 - [Welcome To PJ Blog!](https://www.pigjian.com/)
 - [猫叔の杂记 · 手帐](http://www.chole.io/blog/)
@@ -17,6 +16,7 @@
 - [Marco的个人博客](http://www.hanyuehui.site/)
 - [酷 壳 - CoolShell](https://coolshell.cn/)
 - [拓跋的前端客栈](http://tuobaye.com/#blog)
+- [吉林乌拉](http://jilinwula.com/)
 
 依赖库
 

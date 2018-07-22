@@ -4,6 +4,7 @@
 from bs4 import BeautifulSoup
 
 base = 'http://yuanhehe.cn'
+origin = 'http://yuanhehe.cn'
 
 def parseYuanHeHe(content=""):
     page = dict()
@@ -29,4 +30,5 @@ def parseYuanHeHe(content=""):
     # 所有博客列表
     page['blogs'] = blogs
     page['blogCount'] = len(blogs)
+    page['origin'] = origin
     return page

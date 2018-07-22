@@ -2,6 +2,8 @@
 # 解析 ZiWenXie 的脚本
 from bs4 import BeautifulSoup
 
+origin = 'https://www.ziwenxie.site/'
+
 def parseZiWenXie(content=""):
     page = dict()
     if not content:
@@ -26,4 +28,5 @@ def parseZiWenXie(content=""):
     # 所有博客列表
     page['blogs'] = blogs
     page['blogCount'] = len(blogs)
+    page['origin'] = origin
     return page

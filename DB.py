@@ -27,15 +27,15 @@ def str2Datetime(string):
 def getConnect():
     return pymysql.connect(host=params.get("host"), port=params.get("port"), user=params.get("user"), password=params.get("password"), db=params.get("db"), charset=params.get("charset"))
 
-def insertByBatch(netBlogs, title):
+def insertByBatch(netBlogs, title, origin):
     db = getConnect()
     for netBlog in netBlogs:
         cursor = db.cursor()
         author = netBlog.get("author") if netBlog.get("author") else ''
         date = str2Datetime(netBlog.get("publishTime"))
         # 构建 sql
-        sql = "INSERT INTO net_blog(id, title, href, author, publishTime, origin) VALUES ('%s', '%s', '%s', '%s', '%s', \"%s\")" % \
-                (uuid.uuid1(), netBlog.get("title"), netBlog.get("href"), author, date.strftime('%Y-%m-%d'), title)
+        sql = "INSERT INTO net_blog(id, title, href, author, publishTime, origin, originLink) VALUES ('%s', '%s', '%s', '%s', '%s', \"%s\")" % \
+                (uuid.uuid1(), netBlog.get("title"), netBlog.get("href"), author, date.strftime('%Y-%m-%d'), title, origin)
         try:
             cursor.execute(sql)
             db.commit()

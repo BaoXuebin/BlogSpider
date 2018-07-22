@@ -5,11 +5,13 @@
 import json
 
 base = 'http://www.hanyuehui.site/article-detail/'
+origin = 'http://www.hanyuehui.site/'
 
 def parseMarco(content=""):
     page = dict()
     if not content:
         return page
+    page['origin'] = origin
     # 页面标题
     page['title'] = 'Marco的个人博客'
     blogs = list()

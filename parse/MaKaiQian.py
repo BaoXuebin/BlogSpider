@@ -2,11 +2,13 @@
 from bs4 import BeautifulSoup
 
 base = 'http://makaiqian.com/'
+origin = 'http://makaiqian.com/'
 
 def parseMaKaiQian(content=""):
     page = dict()
     if not content:
         return page
+    page['origin'] = origin
     # 获取 soup 对象
     soup = BeautifulSoup(content, 'html.parser')
     # 页面标题
