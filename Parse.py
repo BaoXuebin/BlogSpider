@@ -59,7 +59,7 @@ def parse(content, handler):
     # 页面数据比对，获取更新博客列表
     diff = diffJson(page)
     # 持久化
-    # insertByBatch(diff, title, origin)
+    insertByBatch(diff, title, origin)
     # 输出数据内容
     log(title, diff)
     # 缓存页面数据
