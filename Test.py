@@ -1,11 +1,11 @@
 # -*- coding:utf-8 -*-
 import sys
 sys.path.append('parse')
-from parse.Jilinwula import exports as Jilinwula
+from parse.Ruanyifeng import exports as Ruanyifeng
 from NetUtils import NetUtils
 
-url = Jilinwula.get("url")
-title = Jilinwula.get("title")
+url = Ruanyifeng.get("url")
+title = Ruanyifeng.get("title")
 
 # 抓取数据，保存至本地
 def req():
@@ -24,6 +24,6 @@ def getContent():
 
 if __name__ == '__main__':
     # req()
-    parser = Jilinwula.get("parser")
+    parser = Ruanyifeng.get("parser")
     print(parser(getContent()))
     

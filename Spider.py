@@ -17,6 +17,7 @@ from Marco import parseMarco
 from CoolShell import parseCoolShell
 from Tuobaye import parseTuobaye
 from Jilinwula import exports as Jilinwula
+from Ruanyifeng import exports as Ruanyifeng
 from Parse import parse
 
 if __name__ == '__main__':
@@ -34,6 +35,7 @@ if __name__ == '__main__':
         { 'url': 'https://coolshell.cn/', 'handler': parseCoolShell },
         { 'url': 'http://tuobaye.com/#blog', 'handler': parseTuobaye },
         { 'url': Jilinwula.get('url'), 'handler': Jilinwula.get('parser') },
+        { 'url': Ruanyifeng.get('url'), 'handler': Ruanyifeng.get('parser') },
     ]
     date = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
     print('+' + '--' * 6 + date + '--' * 6 + '+')
@@ -44,7 +46,3 @@ if __name__ == '__main__':
         except Exception as e:
             print(e)
             print(blogAction.get('url') + '访问失败')
-
-    # response = NetUtils.get('http://tuobaye.com/#blog')
-    # with open('html.txt', 'w', encoding='utf-8') as f:
-    #     f.write(response)
