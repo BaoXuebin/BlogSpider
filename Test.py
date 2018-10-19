@@ -1,11 +1,11 @@
 # -*- coding:utf-8 -*-
 import sys
 sys.path.append('parse')
-from parse.Ruanyifeng import exports as Ruanyifeng
+from parse.Jmtaobao import exports as Jmtaobao
 from NetUtils import NetUtils
 
-url = Ruanyifeng.get("url")
-title = Ruanyifeng.get("title")
+url = Jmtaobao.get("url")
+title = Jmtaobao.get("title")
 
 # 抓取数据，保存至本地
 def req():
@@ -24,6 +24,6 @@ def getContent():
 
 if __name__ == '__main__':
     # req()
-    parser = Ruanyifeng.get("parser")
+    parser = Jmtaobao.get("parser")
     print(parser(getContent()))
     

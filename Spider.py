@@ -18,6 +18,7 @@ from CoolShell import parseCoolShell
 from Tuobaye import parseTuobaye
 from Jilinwula import exports as Jilinwula
 from Ruanyifeng import exports as Ruanyifeng
+from Jmtaobao import exports as Jmtaobao
 from Parse import parse
 
 if __name__ == '__main__':
@@ -36,6 +37,7 @@ if __name__ == '__main__':
         { 'url': 'http://tuobaye.com/#blog', 'handler': parseTuobaye },
         { 'url': Jilinwula.get('url'), 'handler': Jilinwula.get('parser') },
         { 'url': Ruanyifeng.get('url'), 'handler': Ruanyifeng.get('parser') },
+        { 'url': Jmtaobao.get('url'), 'handler': Jmtaobao.get('parser') }
     ]
     date = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
     print('+' + '--' * 6 + date + '--' * 6 + '+')

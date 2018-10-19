@@ -18,6 +18,7 @@
 - [拓跋的前端客栈](http://tuobaye.com/#blog)
 - [吉林乌拉](http://jilinwula.com/)
 - [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
+- [阿里中间件团队博客](http://jm.taobao.org/)
 
 依赖库
 
