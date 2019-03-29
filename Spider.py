@@ -2,24 +2,24 @@
 import io
 import sys
 import time
-sys.path.append('parse')
+
 from NetUtils import NetUtils
-from PJBlog import parsePJBlog
-from JackPuBlog import parseJackPuBlog
-from EnumsBlog import parseEnumsBlog
-from MaKaiQian import parseMaKaiQian
-from BYVoid import parseBYVoid
-from Chole import parseChole
-from YuanHeHe import parseYuanHeHe
-from Thankbabe import parseThankbabe
-from LittleWin import parseLittleWin
-from Marco import parseMarco
-from CoolShell import parseCoolShell
-from Tuobaye import parseTuobaye
-from Jilinwula import exports as Jilinwula
-from Ruanyifeng import exports as Ruanyifeng
-from Jmtaobao import exports as Jmtaobao
 from Parse import parse
+from parse.PJBlog import parsePJBlog
+from parse.JackPuBlog import parseJackPuBlog
+from parse.EnumsBlog import parseEnumsBlog
+from parse.MaKaiQian import parseMaKaiQian
+from parse.BYVoid import parseBYVoid
+from parse.YuanHeHe import parseYuanHeHe
+from parse.Thankbabe import parseThankbabe
+from parse.LittleWin import parseLittleWin
+from parse.Marco import parseMarco
+from parse.CoolShell import parseCoolShell
+from parse.Tuobaye import parseTuobaye
+from parse.Jilinwula import exports as Jilinwula
+from parse.Ruanyifeng import exports as Ruanyifeng
+from parse.Jmtaobao import exports as Jmtaobao
+from parse.Hchstudio import exports as Hchstudio # 代码星冰乐
 
 if __name__ == '__main__':
     blogActions = [
@@ -28,7 +28,6 @@ if __name__ == '__main__':
         { 'url': 'http://posts.enumsblog.com/list', 'handler': parseEnumsBlog },
         { 'url': 'http://makaiqian.com/', 'handler': parseMaKaiQian },
         { 'url': 'https://www.byvoid.com/blog/list', 'handler': parseBYVoid },
-        { 'url': 'http://www.chole.io/blog/archive.html', 'handler': parseChole },
         { 'url': 'http://yuanhehe.cn/archives/', 'handler': parseYuanHeHe },
         { 'url': 'https://blog.thankbabe.com/archive/', 'handler': parseThankbabe },
         { 'url': 'https://littlewin.wang/', 'handler': parseLittleWin },
@@ -37,7 +36,8 @@ if __name__ == '__main__':
         { 'url': 'http://tuobaye.com/#blog', 'handler': parseTuobaye },
         { 'url': Jilinwula.get('url'), 'handler': Jilinwula.get('parser') },
         { 'url': Ruanyifeng.get('url'), 'handler': Ruanyifeng.get('parser') },
-        { 'url': Jmtaobao.get('url'), 'handler': Jmtaobao.get('parser') }
+        { 'url': Jmtaobao.get('url'), 'handler': Jmtaobao.get('parser') },
+        { 'url': Hchstudio.get('url'), 'handler': Hchstudio.get('parser') }
     ]
     date = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
     print('+' + '--' * 6 + date + '--' * 6 + '+')

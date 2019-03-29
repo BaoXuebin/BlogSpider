@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-from Base import getSoup
+from parse.Base import getSoup
 
 title = "阮一峰的网络日志"
 origin = "http://www.ruanyifeng.com"

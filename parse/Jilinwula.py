@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-from Base import getSoup
+from parse.Base import getSoup
 
 title = "吉林乌拉"
 origin = "http://jilinwula.com/"

@@ -1,12 +1,12 @@
 # -*- coding:utf-8 -*-
 from parse.Base import getSoup
 
-title = "阿里中间件团队博客"
+title = "这是标题"
 origin = "http://jm.taobao.org"
 url = "http://jm.taobao.org"
 
-# 解析 Jmtaobao 的脚本
-def parseJmtaobao(content=""):
+# 解析 Template 的脚本
+def parseTemplate(content=""):
     page = dict()
     soup = getSoup(content)
     if soup:
@@ -35,5 +35,5 @@ def parseJmtaobao(content=""):
 exports = {
     "url": url,
     "title": title,
-    "parser": parseJmtaobao
+    "parser": parseTemplate
 }

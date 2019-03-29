@@ -1,11 +1,10 @@
 # -*- coding:utf-8 -*-
 import sys
-sys.path.append('parse')
-from parse.Jmtaobao import exports as Jmtaobao
+from parse.Hchstudio import exports as Hchstudio
 from NetUtils import NetUtils
 
-url = Jmtaobao.get("url")
-title = Jmtaobao.get("title")
+url = Hchstudio.get("url")
+title = Hchstudio.get("title")
 
 # 抓取数据，保存至本地
 def req():
@@ -24,6 +23,6 @@ def getContent():
 
 if __name__ == '__main__':
     # req()
-    parser = Jmtaobao.get("parser")
+    parser = Hchstudio.get("parser")
     print(parser(getContent()))
     
