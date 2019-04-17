@@ -19,7 +19,10 @@ from parse.Tuobaye import parseTuobaye
 from parse.Jilinwula import exports as Jilinwula
 from parse.Ruanyifeng import exports as Ruanyifeng
 from parse.Jmtaobao import exports as Jmtaobao
-from parse.Hchstudio import exports as Hchstudio # 代码星冰乐
+# 代码星冰乐
+from parse.Hchstudio import exports as Hchstudio
+# 程序羊
+from parse.CodeSheep import exports as CodeSheep
 
 if __name__ == '__main__':
     blogActions = [
@@ -37,7 +40,8 @@ if __name__ == '__main__':
         { 'url': Jilinwula.get('url'), 'handler': Jilinwula.get('parser') },
         { 'url': Ruanyifeng.get('url'), 'handler': Ruanyifeng.get('parser') },
         { 'url': Jmtaobao.get('url'), 'handler': Jmtaobao.get('parser') },
-        { 'url': Hchstudio.get('url'), 'handler': Hchstudio.get('parser') }
+        { 'url': Hchstudio.get('url'), 'handler': Hchstudio.get('parser') },
+        { 'url': CodeSheep.get('url'), 'handler': CodeSheep.get('parser') }
     ]
     date = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
     print('+' + '--' * 6 + date + '--' * 6 + '+')

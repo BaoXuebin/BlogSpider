@@ -1,10 +1,10 @@
 # -*- coding:utf-8 -*-
 import sys
-from parse.Hchstudio import exports as Hchstudio
+from parse.CodeSheep import exports as CodeSheep
 from NetUtils import NetUtils
 
-url = Hchstudio.get("url")
-title = Hchstudio.get("title")
+url = CodeSheep.get("url")
+title = CodeSheep.get("title")
 
 # 抓取数据，保存至本地
 def req():
@@ -23,6 +23,6 @@ def getContent():
 
 if __name__ == '__main__':
     # req()
-    parser = Hchstudio.get("parser")
+    parser = CodeSheep.get("parser")
     print(parser(getContent()))
     
