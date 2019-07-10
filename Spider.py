@@ -7,7 +7,6 @@ from NetUtils import NetUtils
 from Parse import parse
 from parse.PJBlog import parsePJBlog
 from parse.JackPuBlog import parseJackPuBlog
-from parse.EnumsBlog import parseEnumsBlog
 from parse.MaKaiQian import parseMaKaiQian
 from parse.BYVoid import parseBYVoid
 from parse.YuanHeHe import parseYuanHeHe
@@ -26,15 +25,12 @@ from parse.CodeSheep import exports as CodeSheep
 
 if __name__ == '__main__':
     blogActions = [
-        { 'url': 'https://www.pigjian.com/article', 'handler': parsePJBlog },
         { 'url': 'http://www.jackpu.com/', 'handler': parseJackPuBlog },
-        { 'url': 'http://posts.enumsblog.com/list', 'handler': parseEnumsBlog },
         { 'url': 'http://makaiqian.com/', 'handler': parseMaKaiQian },
         { 'url': 'https://www.byvoid.com/blog/list', 'handler': parseBYVoid },
         { 'url': 'http://yuanhehe.cn/archives/', 'handler': parseYuanHeHe },
         { 'url': 'https://blog.thankbabe.com/archive/', 'handler': parseThankbabe },
         { 'url': 'https://littlewin.wang/', 'handler': parseLittleWin },
-        { 'url': 'http://www.hanyuehui.site/get-articles?count=15&type=1', 'handler': parseMarco },
         { 'url': 'https://coolshell.cn/', 'handler': parseCoolShell },
         { 'url': 'http://tuobaye.com/#blog', 'handler': parseTuobaye },
         { 'url': Jilinwula.get('url'), 'handler': Jilinwula.get('parser') },

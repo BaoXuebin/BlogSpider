@@ -6,13 +6,10 @@
 
 - [Jack Pu's Blog (蒲小花的博客－ポーのブログ)](http://www.jackpu.com/)
 - [BYVoid](https://www.byvoid.com/)
-- [Enum的技术博客 | 保持专注](http://posts.enumsblog.com/)
 - [SFLYQ](https://blog.thankbabe.com/)
 - [小麻雀](http://makaiqian.com/)
-- [Welcome To PJ Blog!](https://www.pigjian.com/)
 - [yuanhehe' blog](http://yuanhehe.cn/)
 - [littlewin.wang - 琪中有不凡 | littlewin.wang](https://littlewin.wang/)
-- [Marco的个人博客](http://www.hanyuehui.site/)
 - [酷 壳 - CoolShell](https://coolshell.cn/)
 - [拓跋的前端客栈](http://tuobaye.com/#blog)
 - [吉林乌拉](http://jilinwula.com/)
